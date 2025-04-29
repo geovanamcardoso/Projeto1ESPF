@@ -1,0 +1,72 @@
+/*seletor= elemento (antes das chaves), propriedades = dentro das chaves, bloco=
+ início e fim das chaves*/
+/*Seguir ordem feita aqui e no html! código é compilado da esquerda para direita*/
+/* Asterisco é seletor universal, aplicado a todas as páginas*/
+/*bg-color = cor especifica, bg = cor linear*/
+
+*{
+    margin:0;
+    padding:0; /* separa elementos da margem, primeiro n°: em cima e embaixo, segundo: esquerda e direita*/
+    box-sizing:border-box; /*Gerencia altura e largura entre os elementos*/
+}
+
+body{
+    background: transparent;
+
+}
+#container{
+    display: flex; /*Flexibilidade, coloca elementos lado a lado*/
+    flex-direction: column;  /*Um do lado do outro em coluna*/
+    gap:10px; /*Espaçamento nos elementos*/
+    padding:10px;
+}
+header{
+    background: yellow;
+    text-align: center;
+    padding: 20px; /*auto deixa padrão, do tamanho da fonte*/
+}
+#containerAside{
+    width:100%;
+    display: flex;
+}
+#conteudo{
+    background: purple;
+    color: #fff;
+    text-align: center;
+    padding:100px;
+    flex:2; /*Ajusta espaço entre os elementos lado a lado (em seguida)*/
+}
+#conteudo article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside{
+    background: blue;
+    padding: 40px;
+    flex:1;
+}
+
+footer{
+    background: greenyellow;
+    padding: 50px;
+}
+
+ /*Modifica as telas*/
+@media(min-width:700px){
+    #container{
+        flex-direction: column;
+    }
+    #containerAside{
+       display: flex;
+    }
+    #conteudo{
+        flex:2;
+    }
+    aside{
+        flex:1;
+
+    }
+}
+
+

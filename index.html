@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <!--CSS Externo, boa prática-->
+
     <title>Projeto 1</title>
+    <!--Semântico = Bem organizado, bem estruturado-->
+
+     <!-- <style>
+        body{
+        background-color:green;
+        }
+        /* Interno = não é uma boa prática, polui muito o código */
+    </style>  -->
+
+    <!-- <body style = in-line-->
+
 </head>
 <body>
+<!--Início forma semântica (organizada) de HTML-->
+<!--Se o comando estiver vermelho, é porque não é uma boa prática-->
+<!--barra lateral = aside, não criar div!-->
+<!--id = individual, aquela config é única -> #, class = coletivo, mais de um elemento na página utiliza a mesma config -> . -->
+
+    <div id="container">
+        <header> <!--Cabeçalho-->
+            <h1>Cabeçalho</h1> <!--Título-->
+        </header>
+        <main id="containerAside"> <!--Principal, onde vai ficar o conteúdo, corpo da página-->
+
+            <section id="conteudo">
+
+                <article> <!--Conteúdo é um article-->
+                    <h2>Conteúdo</h2>
+                </article>
+
+            </section>
+
+            <aside>
+                <h2>Aside</h2>
+            </aside>
+
+        </main>
+
+        <footer>
+            <h3>&copy;-2025- todos os direitos reservados.</h3>
+        </footer>
+
+    </div>
     
+
 </body>
 </html>
