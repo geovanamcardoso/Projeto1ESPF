@@ -24,6 +24,7 @@ header{
     background: yellow;
     text-align: center;
     padding: 20px; /*auto deixa padrão, do tamanho da fonte*/
+    width: 100%;
 }
 #containerAside{
     width:100%;
@@ -50,6 +51,7 @@ aside{
 footer{
     background: greenyellow;
     padding: 50px;
+    width: 100%;
 }
 
  /*Modifica as telas*/
